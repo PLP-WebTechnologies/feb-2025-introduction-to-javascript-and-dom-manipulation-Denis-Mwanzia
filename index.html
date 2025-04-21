@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" author="Denis Mwanzia">
+    <meta name="description" content="DOM Manipulation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">🧠 Daily Mood Tracker</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select Your Mood</h2>
+            <button onclick="updateMood('happy')">😊 Happy</button>
+            <button onclick="updateMood('sad')">😢 Sad</button>
+            <button onclick="updateMood('angry')">😠 Angry</button>
+        </section>
+
+        <section>
+            <p id="message">How are you feeling today?</p>
+        </section>
+
+        <section>
+            <input type="text" id="customMoodInput" placeholder="Add your own mood" />
+            <button id="addMoodBtn">Add Mood</button>
+            <ul id="customMoods"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Denis Mwanzia. | Stay mentally fit 💚</p>
+    </footer>
+</body>
+
+</html>
